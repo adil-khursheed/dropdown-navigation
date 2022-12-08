@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --fw-bold: 700;
+    --fw-light: 500;
+
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+/* === GENERAL STYLES === */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Almost-White);
+}
+
+a{
+    text-decoration: none;
+    color: var(--Medium-Gray);
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* === HEADER STYLES === */
+.mobile-toggle-menu{
+    display: none;
+}
+
+header,
+.menu,
+.navbar,
+.menu-list,
+.login,
+.login ul{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    max-width: 1440px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    gap: 3rem;
+    font-size: 0.75rem;
+}
+
+.menu{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-list,
+.login ul{
+    gap: 2.5rem;
+}
+
+.dropdown-icon{
+    width: 8px;
+}
+
+.dropdown-link{
+    position: relative;
+}
+
+.dropdown-menu{
+    background-color: var(--Almost-White);
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.dropdown-1{
+    left: -75px;
+    width: 140px;
+}
+
+.dropdown-2{
+    width: 110px;
+}
+
+.dropdown-menu img{
+    width: 11px;
+    margin-right: 0.5rem;
+}
+
+
+
+/* === FOOTER STYLES === */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
