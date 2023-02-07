@@ -54,7 +54,7 @@ header,
 header{
     max-width: 1440px;
     width: 100%;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
     gap: 3rem;
     font-size: 0.75rem;
 }
@@ -69,11 +69,7 @@ header{
     gap: 2.5rem;
 }
 
-.dropdown-icon{
-    width: 8px;
-}
-
-.dropdown-link{
+.list-item{
     position: relative;
 }
 
@@ -89,6 +85,15 @@ header{
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.8rem;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s all;
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
 }
 
 .dropdown-1{
@@ -108,11 +113,11 @@ header{
 
 
 /* === FOOTER STYLES === */
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+    font-size: 11px;
+    text-align: center;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
